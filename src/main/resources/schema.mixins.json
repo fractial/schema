@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "app.fractial.schema.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MinecraftServerMixin",
+    "core.registries.RegistriesMixin",
+    "server.ReloadableServerResourcesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}
