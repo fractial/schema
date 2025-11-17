@@ -26,6 +26,14 @@ public class ItemStackManager extends SimplePreparableReloadListener<Map<Resourc
         this.registries = provider;
     }
 
+    public static ItemStack getItemStack(ResourceLocation resourceLocation) {
+        return items.get(resourceLocation);
+    }
+
+    public static Map<ResourceLocation, ItemStack> getItemStackManager() {
+        return items;
+    }
+
     @Override
     protected @NotNull Map<ResourceLocation, ItemStack> prepare(ResourceManager resourceManager, ProfilerFiller profilerFiller) {
         SortedMap<ResourceLocation, ItemStack> map = new TreeMap<>();
@@ -37,6 +45,7 @@ public class ItemStackManager extends SimplePreparableReloadListener<Map<Resourc
                 map
         );
         items = map;
+        System.out.println("Loaded item: " + items);
         return map;
     }
 

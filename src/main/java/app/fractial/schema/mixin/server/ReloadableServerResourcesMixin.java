@@ -34,5 +34,6 @@ public class ReloadableServerResourcesMixin {
         List<PreparableReloadListener> newList = new ArrayList<>(list);
         newList.addFirst(this.items);
         cir.setReturnValue(Collections.unmodifiableList(newList));
+
     }
 }
