@@ -2,11 +2,13 @@ package app.fractial.schema;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.server.MinecraftServer;
+import net.minecraft.commands.arguments.ResourceOrIdArgument;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.server.ReloadableServerResources;
-import net.minecraft.server.commands.GiveCommand;
-import net.minecraft.world.item.crafting.RecipeManager;
+import net.minecraft.world.item.crafting.ShapedRecipe;
+import net.minecraft.world.item.crafting.ShapelessRecipe;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

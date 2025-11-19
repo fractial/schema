@@ -3,13 +3,14 @@
 	"id": "schema",
 	"version": "${version}",
 	"name": "Schema",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "The data addition for the base game.",
 	"authors": [
-		"Me!"
+		"Fractial"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://fractial.app",
+        "issues": "https://git.fractial.app/schema/issues",
+		"sources": "https://git.fractial.app/schema"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/schema/icon.png",
